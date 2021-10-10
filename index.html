@@ -2,22 +2,45 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- ===== BOX ICONS ===== -->
+
+
+
+
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Mit Portfolio</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/6b4a3d7b29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/h4ru18k2oqic6a1dmyhtku0v5gp4y1lc52kb2r4saf99fguv/tinymce/5/tinymce.min.js"
+            referrerpolicy="origin"></script>
 </head>
 <body>
-<!--===== HEADER =====-->
+
 <header class="l-header">
     <nav class="nav bd-grid">
         <div>
-            <a href="#" class="nav__logo">Jhon Doe</a>
+            <a class="nav__logo">
+                <img src="images/Logo.png" style="width: 30px" class="d-inline-block align-top" alt="">
+                Joachim Berner
+            </a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -37,7 +60,7 @@
 </header>
 
 <main class="l-main">
-    <!--===== HOME =====-->
+
     <section class="home" id="home">
         <div class="home__container bd-grid">
             <h1 class="home__title"><span>HE</span><br>LLO.</h1>
@@ -50,7 +73,7 @@
         </div>
     </section>
 
-    <!--===== ABOUT =====-->
+
     <section class="about section" id="about">
         <h2 class="section-title">About</h2>
 
@@ -62,19 +85,30 @@
             <div>
                 <h2 class="about__subtitle">Mit Navn er Joachim</h2>
                 <span class="about__profession">Web designer</span>
-                <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur,
-                    architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+                <p class="about__text">Jeg hedder Joachim Ekstrøm Berner og er i gang værende studerende på Uddannelsen
+                    som Multimediedesigner. Til dagligt kan jeg godt lide at sidde og lave nogle små sider i PHP storm,
+                    med hjælp fra Google og
+                    Youtube, og se hvad det ender med af mærkelige sider.</p>
+
+
+                <p class="about__text">Ud over kodning sidder jeg også tit i programmet Ilustrator, og laver lidt
+                    tilfældige ting og sager.</p>
+
+
+                <p class="about__text">Så alt i alt, er jeg en super frisk og energisk ung mand, der elsker at sidde og
+                    eksperimenter lidt.</p>
+
 
                 <div class="about__social">
-                    <a href="#" class="about__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#" class="about__social-icon"><i class='bx bxl-github'></i></a>
-                    <a href="#" class="about__social-icon"><i class='bx bxl-dribbble'></i></a>
+                    <a href="https://www.linkedin.com/in/joachim-berner-249906208/"
+                       class="about__social-icon fab fa-linkedin-in text-black"></a>
+                    <a href="https://github.com/Bnop1146" class="about__social-icon fab fa-github text-black"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--===== SKILLS =====-->
+
     <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
 
@@ -83,8 +117,10 @@
                 <h3 class="skills__subtitle">Kodningsfaget</h3>
                 <span class="skills__name">Html</span>
                 <span class="skills__name">Css</span>
+                <span class="skills__name">Bootstrap</span>
                 <span class="skills__name">Javascript</span>
                 <span class="skills__name">Scss</span>
+                <span class="skills__name">Database/PHP</span>
 
 
                 <h3 class="skills__subtitle">Design</h3>
@@ -94,75 +130,54 @@
             </div>
 
             <div class="skills__img">
-                <img src="images/skill.jpg" alt="">
+                <img src="images/skills-image.png" alt="">
             </div>
         </div>
     </section>
 
-    <!--===== PORTFOLIO =====-->
+
     <section class="portfolio section" id="portfolio">
         <h2 class="section-title">Portfolio</h2>
 
         <div class="portfolio__container bd-grid">
             <div class="portfolio__img">
-                <img src="images/work1.jpg" alt="">
+                <img src="images/Monzo.jpg" alt="">
 
                 <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">View details</a>
+                    <a href="monzo.php" class="portfolio__link-name text-black">Monzo</a>
                 </div>
             </div>
             <div class="portfolio__img">
-                <img src="images/work2.jpg" alt="">
+                <img src="images/rockfinder.jpg" alt="">
 
                 <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">View details</a>
+                    <a href="rockfinder.php" class="portfolio__link-name text-black">Rock Finder</a>
                 </div>
             </div>
             <div class="portfolio__img">
-                <img src="images/work3.jpg" alt="">
+                <img src="images/kafetårn.jpg" alt="">
 
                 <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">View details</a>
-                </div>
-            </div>
-            <div class="portfolio__img">
-                <img src="images/work4.jpg" alt="">
-
-                <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">View details</a>
-                </div>
-            </div>
-            <div class="portfolio__img">
-                <img src="images/work5.jpg" alt="">
-
-                <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">View details</a>
-                </div>
-            </div>
-            <div class="portfolio__img">
-                <img src="images/work6.jpg" alt="">
-
-                <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">View details</a>
+                    <a href="kafetårn.php" class="portfolio__link-name text-black">Kafe Kafetår'n</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--===== CONTACT =====-->
+
     <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Kontakt</h2>
 
         <div class="contact__container bd-grid">
             <div class="contact__info">
                 <h3 class="contact__subtitle">EMAIL</h3>
-                <span class="contact__text">info.mail.com</span>
+                <span class="contact__text">Joachim.berner@hotmail.com</span>
 
-                <h3 class="contact__subtitle">PHONE</h3>
-                <span class="contact__text">+20 999-999</span>
+                <h3 class="contact__subtitle">Mobil</h3>
+                <span class="contact__text">+45 - 6049****</span>
 
-                <h3 class="contact__subtitle">ADRESS</h3>
-                <span class="contact__text">My contry</span>
+                <h3 class="contact__subtitle">Adresse</h3>
+                <span class="contact__text">4800 Nykøbing Falster  Danmark</span>
             </div>
 
             <form action="" class="contact__form">
@@ -171,48 +186,53 @@
                     <input type="email" placeholder="Email" class="contact__input">
                 </div>
 
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <textarea placeholder="Din Besked" rows="6" class="contact__input"></textarea>
 
-                <input type="submit" value="Send" class="contact__button">
+
+                <button type="submit" class="btn"><i class="far fa-paper-plane contact__button text-black"> Send</i>
+                </button>
+
+
             </form>
         </div>
     </section>
 </main>
 
-<!--===== FOOTER =====-->
+
 <footer class="footer section">
     <div class="footer__container bd-grid">
         <div class="footer__data">
             <h2 class="footer__title">Joachim Berner</h2>
-            <p class="footer__text">Hej mit navn er Joachim Berner, og her er mit Portfolio</p>
+            <p class="footer__text text-warning">Hej mit navn er Joachim Berner </p>
+            <p class="footer__text text-warning"> og her er mit Portfolio</p>
         </div>
 
         <div class="footer__data">
-            <h2 class="footer__title">EXPLORE</h2>
+            <h2 class="footer__title">Find rundt på siden</h2>
             <ul>
-                <li><a href="#home" class="footer__link">Home</a></li>
-                <li><a href="#about" class="footer__link">About</a></li>
-                <li><a href="#skills" class="footer__link">Skills</a></li>
+                <li><a href="#home" class="footer__link">Hjem</a></li>
+                <li><a href="#about" class="footer__link">Om mig</a></li>
+                <li><a href="#skills" class="footer__link">Kompetencer</a></li>
                 <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                <li><a href="#contact" class="footer__link">Contact</a></li>
+                <li><a href="#contact" class="footer__link">Kontakt</a></li>
             </ul>
         </div>
 
         <div class="footer__data">
-            <h2 class="footer__title">FOLLOW</h2>
-            <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+            <h2 class="footer__title">Find mig på</h2>
+            <a href="https://www.linkedin.com/in/joachim-berner-249906208/"
+               class="about__social-icon fab fa-linkedin-in text-warning"></a>
+            <a href="https://github.com/Bnop1146" class="about__social-icon fab fa-github text-warning"></a>
         </div>
 
 
     </div>
 </footer>
 
-<!--===== SCROLL REVEAL =====-->
+
 <script src="https://unpkg.com/scrollreveal"></script>
 
-<!--===== MAIN JS =====-->
+
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,24 +1,23 @@
-/*===== GOOGLE FONTS =====*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
-/*===== VARIABLES CSS =====*/
+
 :root {
   --header-height: 3rem;
   --font-medium: 500;
 }
 
-/*===== Colores =====*/
+/*===== Farver =====*/
 :root {
-  --first-color: #F9A828;
-  --white-color: #ECECEB;
-  --dark-color: #07617D;
-  --text-color: #2E383F;
+  --first-color: #EACE09;
+  --white-color: #ffffff;
+  --footer-color: #1a1a1a;
+  --text-color: #1a1a1a;
 }
 
-/*===== Fuente y tipografia =====*/
+
 :root {
   --body-font: 'Montserrat', sans-serif;
-
   --big-font-size: 6.25rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -32,7 +31,7 @@
   }
 }
 
-/*===== Margenes =====*/
+/*===== Margin på siden =====*/
 :root {
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -45,7 +44,7 @@
   --z-fixed: 100;
 }
 
-/*===== BASE =====*/
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -79,19 +78,20 @@ a {
 }
 
 img {
-  max-width: 80%;
+  width: 100%;
   height: auto;
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+
+
 .section {
   padding: 3rem 0;
 
   &-title {
     position: relative;
     font-size: var(--h2-font-size);
-    color: var(--dark-color);
+    color: var(--text-color);
     margin: var(--mb-4) 0;
     text-align: center;
 
@@ -109,7 +109,37 @@ img {
   }
 }
 
-/*===== LAYOUT =====*/
+
+/*===== Opsætning på siden =====*/
+.how-section1 {
+  margin-top: -15%;
+  padding: 10%;
+}
+
+.how-section1 h4 {
+  color: var(--first-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.how-section1 .subheading {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.how-section1 .row {
+  margin-top: 10%;
+}
+
+.how-img {
+  text-align: center;
+}
+
+.how-img img {
+  width: 70%;
+}
+
+
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -164,22 +194,22 @@ img {
   }
 
   &__logo {
-    color: var(--white-color);
+    color: var(--text-color);
   }
 
   &__toggle {
-    color: var(--white-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
   }
 }
 
-/*=== Show menu ===*/
+/*=== Vis Menu ===*/
 .show {
   right: 0;
 }
 
-/*Active menu*/
+/*Den aktive menu*/
 .active::after {
   position: absolute;
   content: '';
@@ -204,7 +234,7 @@ img {
   &__title {
     align-self: flex-end;
     font-size: var(--big-font-size);
-    color: var(--white-color);
+    color: var(--text-color);
     line-height: .8;
 
     & span {
@@ -219,7 +249,7 @@ img {
     &-link {
       writing-mode: vertical-lr;
       transform: rotate(-180deg);
-      color: var(--white-color);
+      color: var(--text-color);
     }
   }
 
@@ -243,14 +273,14 @@ img {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
 
     & img {
-      width: 100px;
+      width: 100%;
     }
   }
 
@@ -298,7 +328,8 @@ img {
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: .25rem .5rem;
-    background-color: var(--white-color);
+    color: var(--white-color);
+    background-color: var(--footer-color);
     border-radius: .25rem;
 
     &:hover {
@@ -351,7 +382,7 @@ img {
     transition: .3s;
 
     &-name {
-      color: var(--dark-color);
+      color: var(--footer-color);
     }
   }
 }
@@ -382,7 +413,7 @@ img {
     width: 100%;
     padding: .8rem;
     outline: none;
-    border: 1.5px solid var(--dark-color);
+    border: 1.5px solid var(--footer-color);
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
@@ -402,9 +433,9 @@ img {
   }
 }
 
-/* ===== FOOTER=====*/
+/* ===== FOOTER =====*/
 .footer {
-  background-color: var(--dark-color);
+  background-color: var(--footer-color);
 
   &__container {
     row-gap: 2rem;
@@ -418,6 +449,7 @@ img {
 
   &__link {
     padding: .25rem 0;
+    color: var(--first-color);
 
     &:hover {
       color: var(--first-color);
@@ -427,6 +459,7 @@ img {
   &__social {
     font-size: 1.4rem;
     margin-right: var(--mb-1);
+    color: var(--first-color);
 
     &:hover {
       color: var(--first-color);
@@ -435,13 +468,16 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-/* For small devices */
+/* Til Mobil visning */
 @media screen and (max-width: 320px) {
   .home__img {
-    width: 230px;
+    height: auto;
+    width: 200px;
   }
 }
 
+
+/* Til Tablet visning */
 @media screen and(min-width: 768px) {
   body {
     margin: 0;
@@ -479,12 +515,12 @@ img {
       color: var(--white-color);
 
       &:hover {
-        color: var(--white-color);
+        color: var(--text-color);
       }
     }
   }
   .active::after {
-    background-color: var(--white-color);
+    background-color: var(--text-color);
   }
 
   .home {
@@ -495,8 +531,9 @@ img {
     }
 
     &__img {
-      width: 524px;
-      right: 10%;
+      height: auto;
+      width: 450px;
+      right: 15%;
     }
   }
 
@@ -513,7 +550,7 @@ img {
       height: 200px;
 
       & img {
-        width: 165px;
+        width: 200px;
       }
     }
   }
@@ -550,6 +587,9 @@ img {
   }
 }
 
+
+
+/* Til Desktop visning */
 @media screen and(min-width: 1024px) {
   .bd-grid {
     margin-left: auto;
@@ -557,16 +597,3 @@ img {
   }
 }
 
-/* For tall screens on mobiles y desktop*/
-@media screen and (min-height: 721px) {
-  .home {
-    &__container {
-      height: 640px;
-    }
-
-    &__img {
-      width: 500px;
-      right: 24%;
-    }
-  }
-}
